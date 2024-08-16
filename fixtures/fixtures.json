@@ -1,0 +1,2894 @@
+[
+  {
+    "model": "blog.author",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "bio": "sample text"
+    }
+  },
+  {
+    "model": "blog.author",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "bio": "sample text"
+    }
+  },
+  {
+    "model": "blog.author",
+    "pk": 6,
+    "fields": {
+      "user": 17,
+      "bio": "sample text"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 10,
+    "fields": {
+      "created_at": "2024-04-07T08:13:40.242Z",
+      "updated_at": "2024-08-14T13:23:33.248Z",
+      "author": 1,
+      "category": 1,
+      "title": "Convallis arcu",
+      "text": "<p>Commodo cursus fringilla volutpat a; lectus mollis a ut. Mattis sem molestie; elementum viverra magna libero curabitur. Cubilia magnis accumsan ultricies nostra eget rutrum ultricies dictum. Nisi ac eu ex augue id habitasse vitae. Donec facilisi cras mollis dui semper elementum? Aptent nisl feugiat senectus fusce luctus. Morbi magna tortor phasellus velit venenatis nec.</p>\r\n\r\n<p>Euismod rutrum magnis rhoncus metus senectus dignissim facilisis mollis. Accumsan mi convallis dis sit, viverra class vulputate ipsum. Nunc augue accumsan ex praesent pulvinar, vestibulum natoque. Odio magna proin nibh dapibus consequat. Suspendisse consequat phasellus convallis inceptos nostra suscipit feugiat integer quisque. Tellus turpis ridiculus curae justo faucibus nostra. Risus sagittis metus interdum turpis fames finibus consectetur malesuada.</p>\r\n\r\n<p>Euismod consectetur nibh erat maximus iaculis mus euismod. Blandit curabitur scelerisque faucibus nunc tortor. Lobortis cras aptent mollis risus nisl consequat aenean. Ipsum fringilla lobortis himenaeos primis elementum tellus. Feugiat conubia faucibus imperdiet habitant magna quam. Nisi nostra laoreet duis venenatis magnis molestie cursus, nascetur semper. Venenatis ut maximus tellus viverra platea convallis arcu.</p>\r\n\r\n<p>Dis habitant curae convallis commodo sit scelerisque placerat. Ipsum urna iaculis nisl porttitor fusce. Lacus turpis ac fringilla iaculis; eu dolor pretium. Ridiculus tortor vitae vulputate magnis dictum eu dignissim ornare. Per felis sapien varius hac consequat felis dignissim dapibus. Cras hac orci aliquet arcu per tortor morbi iaculis. Congue cubilia lorem dignissim aptent netus lobortis.</p>\r\n\r\n<p>Taciti quam ac duis potenti semper ligula. Sem fusce odio hendrerit odio nulla est id. Interdum facilisi inceptos adipiscing curabitur; pretium dignissim venenatis. Penatibus vestibulum habitant fusce pretium gravida fames lobortis torquent. Porta bibendum eros finibus ridiculus vehicula vulputate lorem. Rutrum sagittis maximus commodo magnis, orci interdum? Aliquet placerat felis ante eu laoreet scelerisque nec vestibulum. Nullam vel facilisis primis cras bibendum hendrerit gravida.</p>"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 18,
+    "fields": {
+      "created_at": "2024-04-08T19:01:25.793Z",
+      "updated_at": "2024-08-14T13:24:15.977Z",
+      "author": 3,
+      "category": 1,
+      "title": "Habitant morbi tristique senectus et",
+      "text": "<p>Accumsan pretium porttitor; ipsum torquent himenaeos ex. Etiam placerat est dui eros porta ad eros. Nascetur adipiscing mus suspendisse ante magna iaculis aenean. Quisque taciti efficitur; porttitor fermentum feugiat urna. Pulvinar iaculis ultrices viverra orci nam class curabitur magnis. Eu natoque parturient iaculis nam purus nullam. Velit gravida non; venenatis est tellus odio fringilla class. Donec vel facilisi vivamus finibus sem habitasse taciti. Sem cras mus aliquam luctus morbi mus nostra massa.</p>\r\n\r\n<p>Neque cursus nisl lorem suspendisse at facilisis. Sagittis morbi morbi inceptos nec mollis viverra sagittis vulputate. Suscipit pellentesque elit quam nec arcu. Himenaeos inceptos gravida taciti tincidunt erat sapien tellus. Lacinia curabitur ut quisque; tortor facilisi egestas massa semper. Lacinia elit ullamcorper sem libero duis massa tristique efficitur facilisi. Sit ridiculus luctus curabitur tristique natoque felis. Platea quis dolor nullam ipsum vulputate! Faucibus sollicitudin arcu bibendum cursus eu elementum velit. Maecenas elit per eros nunc vehicula vestibulum fames.</p>"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 22,
+    "fields": {
+      "created_at": "2024-04-09T14:57:17.967Z",
+      "updated_at": "2024-08-14T13:24:43.389Z",
+      "author": 1,
+      "category": 1,
+      "title": "Lectus proin",
+      "text": "<p>Sem faucibus erat suspendisse magna ligula lectus. Sagittis arcu mus ultricies, at orci lorem at. Placerat et ut class facilisis vulputate himenaeos dictum volutpat. Taciti diam interdum tellus scelerisque tortor sed finibus ultrices. Platea duis tincidunt et leo sagittis himenaeos. Lacus conubia convallis duis convallis pretium placerat. Purus dictum id gravida fames pretium. Ornare aliquam viverra vehicula taciti imperdiet tellus platea. Malesuada porta porta consectetur justo rutrum hac sollicitudin magna! Massa pulvinar morbi consequat euismod urna, blandit hac.</p>\r\n\r\n<p>Condimentum inceptos dolor cubilia suspendisse, nisl curabitur placerat. Cras feugiat lacinia ipsum congue eu vestibulum lacus pellentesque. Leo quis risus nisi sollicitudin quisque mus varius urna mattis. Rutrum bibendum hac auctor accumsan torquent semper vulputate ad. Potenti sit vitae ultrices nostra aliquam taciti posuere quis torquent. Efficitur sagittis accumsan interdum vulputate litora, in vitae. Feugiat vel potenti odio ornare, leo iaculis.</p>\r\n\r\n<p>Magna mus efficitur aenean; suspendisse himenaeos enim. Erat aliquam aenean orci faucibus integer. Class penatibus hac turpis ultrices in lacus. Viverra facilisi iaculis cras eu class a integer. Eget nec curae curae consequat eget mauris mi dolor. Conubia nunc auctor et quisque netus.</p>\r\n\r\n<p>Quam ornare tempus, mattis euismod rhoncus dolor luctus. Dui vitae vitae pretium venenatis nisl ipsum natoque lacus. Vivamus diam arcu elementum non ipsum mollis facilisi vulputate. Elit blandit suspendisse eget interdum cras erat mi aenean bibendum. Tempus pretium venenatis neque pharetra efficitur vel magna. Etiam netus lacinia sodales venenatis nisi. Neque convallis congue libero habitant neque interdum amet ante. Laoreet senectus platea ridiculus volutpat in dignissim class eleifend. Tristique ante justo morbi nisl curabitur.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Felis bibendum ut tristique et. Sed viverra tellus in hac habitasse. Urna duis convallis convallis tellus id interdum velit laoreet id. Enim tortor at auctor urna. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Eleifend donec pretium vulputate sapien nec. Vestibulum sed arcu non odio euismod. A lacus vestibulum sed arcu non odio euismod lacinia at. Morbi non arcu risus quis varius quam. Mauris augue neque gravida in. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Diam vulputate ut pharetra sit amet aliquam id diam maecenas.</p>"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 23,
+    "fields": {
+      "created_at": "2024-04-10T14:57:34.933Z",
+      "updated_at": "2024-08-14T13:25:00.846Z",
+      "author": 1,
+      "category": 2,
+      "title": "Interdum consectetur",
+      "text": "<p>Eu quis eleifend vel eros nisi. Dictum maecenas suspendisse ipsum imperdiet suspendisse metus conubia leo dictum. Mi sollicitudin eget sollicitudin ipsum vel aptent nisi habitasse. Mi sapien blandit condimentum integer torquent pharetra mattis elit. Porttitor ex nam dolor cras mi; vulputate suscipit odio. Ac donec viverra aliquam venenatis netus suscipit.</p>\r\n\r\n<p>Dapibus vulputate mattis cubilia maecenas fusce tincidunt. Consequat eu sapien integer; facilisis posuere litora enim. Quam cras eget netus scelerisque pretium vehicula vel. Morbi quisque nibh nullam dignissim phasellus sagittis. Euismod nam dapibus natoque viverra habitant sem faucibus. Integer placerat ante tempus himenaeos lacinia ut? Eget justo fermentum quisque ut risus litora in. Eu urna montes egestas mattis efficitur, aliquam laoreet.</p>\r\n\r\n<p>Urna potenti ornare hac semper sodales congue maximus risus. Diam ac conubia nisi ac vel proin massa luctus. Diam malesuada luctus tincidunt suspendisse; eget hac dolor bibendum. Velit himenaeos sollicitudin sodales nascetur sociosqu velit vitae id. Duis tellus in nam varius orci. Dictum suspendisse dapibus sodales integer maecenas magna porta posuere. Fermentum ultrices efficitur diam volutpat neque. Sagittis habitant ultrices sem semper vel hendrerit finibus volutpat. Platea platea lorem vulputate egestas; eleifend et eget lectus. Vestibulum sem lacinia commodo, dictum sem montes nunc consequat?</p>"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 30,
+    "fields": {
+      "created_at": "2024-04-11T13:38:39.179Z",
+      "updated_at": "2024-08-14T13:25:12.452Z",
+      "author": 1,
+      "category": 1,
+      "title": "Excepteur sint occaecat",
+      "text": "<p>Purus fusce duis ut praesent mauris est condimentum vulputate. Donec natoque augue malesuada etiam habitant tempus nam convallis elit. Torquent mollis porta fermentum magnis turpis lacinia massa. Lacus sem aenean tortor sollicitudin donec torquent cubilia. Nam eleifend aliquet cubilia mollis efficitur sit. Consequat justo vestibulum bibendum eget convallis ultrices pellentesque; ultrices fringilla. Ultricies conubia neque montes habitasse tincidunt nunc facilisis in. Quis orci pretium accumsan curae, est eleifend elit. Dui suspendisse elementum neque finibus egestas.</p>\r\n\r\n<p>Consectetur mollis feugiat finibus nam ultrices faucibus. Netus eleifend sociosqu finibus sem vulputate ridiculus nec maximus. Dui nulla cursus nibh varius, inceptos suscipit urna. Mattis auctor morbi leo porta; mi bibendum velit. Fermentum massa elementum risus ultrices felis rutrum tempor maximus. Sit eget ipsum quis at ipsum. Taciti sollicitudin tellus volutpat vulputate dignissim ipsum lectus. Magnis nisi vel luctus magna, curabitur ultricies dolor habitasse. Felis mollis tortor duis dapibus porttitor cubilia.</p>\r\n\r\n<p>Pretium curae luctus imperdiet aenean sem nam himenaeos. Odio nisl bibendum habitant elementum eu penatibus. Potenti euismod maximus nunc condimentum arcu nisi. Non maecenas mollis eu nisi vulputate. Scelerisque phasellus ullamcorper porttitor nunc aliquam lectus imperdiet. Parturient interdum scelerisque parturient mauris ex elit cubilia cursus. Ad ex blandit porta ad odio sem curabitur. Penatibus eget sit ut porta nibh fusce potenti ac faucibus.</p>\r\n\r\n<p>Curabitur vel donec magna, suspendisse facilisis hac dis. Elementum volutpat aenean mi ante; id nisl. Consequat integer cursus etiam habitant tempus donec nostra eu. Id nisl nascetur vel sagittis pretium velit ut. Neque tempor molestie aptent facilisis justo nam cursus finibus. Nunc imperdiet ut vehicula nam facilisi hendrerit senectus tempor. Mattis cras sapien posuere; faucibus semper ridiculus nunc neque primis.</p>"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 38,
+    "fields": {
+      "created_at": "2024-05-20T16:30:00.595Z",
+      "updated_at": "2024-08-14T13:25:36.337Z",
+      "author": 6,
+      "category": 7,
+      "title": "Ut tellus elementum",
+      "text": "<p>Interdum ad ex justo arcu nunc habitasse. Vulputate dui natoque malesuada convallis pretium dapibus rhoncus. Nibh torquent vestibulum in sociosqu habitasse. Dis semper elementum accumsan, primis efficitur pulvinar. Arcu sociosqu penatibus rhoncus amet rutrum. Conubia vestibulum massa, ullamcorper tortor suspendisse quis.</p>\r\n\r\n<p>Porta nunc tortor aliquet odio, maecenas quis augue. Quam senectus taciti nulla amet suspendisse ligula. Diam vulputate nibh ante feugiat mi luctus. Lacus urna nostra diam mauris imperdiet. Gravida magna suscipit praesent venenatis feugiat feugiat phasellus taciti commodo. Quam tortor rhoncus dictumst viverra maximus venenatis tellus interdum. Ultrices fusce vel sociosqu aliquet rhoncus fringilla. Maecenas etiam ultrices feugiat hendrerit sem rhoncus. Hendrerit quisque at ridiculus rhoncus sociosqu malesuada ultricies. Nec quis nec egestas rutrum nisi enim.</p>\r\n\r\n<p>Eleifend viverra litora ut, sed ultricies natoque. Penatibus pellentesque venenatis condimentum ultricies accumsan vel imperdiet; et sit. Facilisi arcu leo augue vel ante nascetur sit aliquet. Netus torquent scelerisque faucibus feugiat id odio mattis. Aliquet magna ridiculus pulvinar odio platea molestie condimentum. Magna risus sociosqu varius curabitur accumsan penatibus; inceptos dictumst erat. Phasellus lorem lobortis dui potenti in magna ultrices lorem sagittis. Laoreet sit dui facilisi lectus urna senectus sit aliquam.</p>\r\n\r\n<p>Rhoncus lorem maecenas molestie ridiculus vel rutrum dapibus. Blandit pellentesque arcu magna tellus curabitur magnis fermentum. Faucibus class in ridiculus mattis neque eget molestie vitae aliquam. Magnis vestibulum tellus vehicula tortor libero posuere. Dapibus sem cursus justo; laoreet magna venenatis. Urna facilisi elit hendrerit sollicitudin fermentum consequat sed. Justo ridiculus hac porta tincidunt leo nulla sem turpis. Cursus lacus ex habitant lacinia est semper quis. Cubilia posuere auctor erat risus vel. Fames purus elit felis sem malesuada eros tellus.</p>"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 1,
+    "fields": {
+      "title": "Games"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 2,
+    "fields": {
+      "title": "Movies"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 4,
+    "fields": {
+      "title": "Music"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 5,
+    "fields": {
+      "title": "Memes"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 6,
+    "fields": {
+      "title": "IT"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 7,
+    "fields": {
+      "title": "Crypto"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 8,
+    "fields": {
+      "title": "News"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 9,
+    "fields": {
+      "title": "Psychology"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 10,
+    "fields": {
+      "title": "Philosophy"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 11,
+    "fields": {
+      "title": "Books"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 14,
+    "fields": {
+      "title": "wowsuchcategory"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 6,
+    "fields": {
+      "created_at": "2024-04-08T20:01:48.047Z",
+      "updated_at": "2024-04-08T20:01:48.047Z",
+      "author": 2,
+      "post": 10,
+      "reply_to": null,
+      "text": "Lorem ipsum dolor sit amet"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 15,
+    "fields": {
+      "created_at": "2024-04-09T20:12:56.193Z",
+      "updated_at": "2024-04-09T13:50:16.824Z",
+      "author": 17,
+      "post": 10,
+      "reply_to": null,
+      "text": "Ut enim ad minim veniam"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 17,
+    "fields": {
+      "created_at": "2024-04-10T20:13:08.621Z",
+      "updated_at": "2024-04-10T20:25:58.505Z",
+      "author": 3,
+      "post": 10,
+      "reply_to": null,
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 22,
+    "fields": {
+      "created_at": "2024-04-11T20:33:57.691Z",
+      "updated_at": "2024-04-11T20:33:57.692Z",
+      "author": 2,
+      "post": 18,
+      "reply_to": null,
+      "text": "Excepteur sint occaecat cupidatat non proident"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 23,
+    "fields": {
+      "created_at": "2024-04-11T20:35:14.274Z",
+      "updated_at": "2024-04-11T20:36:48.838Z",
+      "author": 17,
+      "post": 18,
+      "reply_to": null,
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 24,
+    "fields": {
+      "created_at": "2024-04-20T13:20:24.334Z",
+      "updated_at": "2024-04-20T13:20:24.334Z",
+      "author": 3,
+      "post": 18,
+      "reply_to": null,
+      "text": "Eaque ipsa quae ab illo <strong>inventore veritatis</strong> et quasi architecto beatae vitae dicta sunt explicabo."
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 30,
+    "fields": {
+      "created_at": "2024-04-22T16:13:12.898Z",
+      "updated_at": "2024-04-24T20:18:04.023Z",
+      "author": 2,
+      "post": 10,
+      "reply_to": null,
+      "text": "Nemo enim ipsam voluptatem quia <em>voluptas sit aspernatur</em> aut odit aut fugit"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 31,
+    "fields": {
+      "created_at": "2024-04-22T16:13:21.138Z",
+      "updated_at": "2024-04-22T16:13:21.138Z",
+      "author": 17,
+      "post": 10,
+      "reply_to": 30,
+      "text": "Qui ratione voluptatem sequi nesciunt"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 32,
+    "fields": {
+      "created_at": "2024-04-22T16:13:21.138Z",
+      "updated_at": "2024-04-22T16:13:21.138Z",
+      "author": 3,
+      "post": 10,
+      "reply_to": 31,
+      "text": "<s>Consectetur"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 34,
+    "fields": {
+      "created_at": "2024-04-27T14:18:52.683Z",
+      "updated_at": "2024-04-27T14:18:52.683Z",
+      "author": 2,
+      "post": 10,
+      "reply_to": 30,
+      "text": "Ut enim ad minima veniam"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 35,
+    "fields": {
+      "created_at": "2024-04-27T14:19:07.946Z",
+      "updated_at": "2024-04-27T14:19:07.946Z",
+      "author": 17,
+      "post": 10,
+      "reply_to": 34,
+      "text": "<strong>Lorem ipsum dolor sit amet</strong>"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 40,
+    "fields": {
+      "created_at": "2024-04-27T18:53:07.066Z",
+      "updated_at": "2024-04-27T18:53:07.066Z",
+      "author": 3,
+      "post": 10,
+      "reply_to": 34,
+      "text": "Ut enim ad minim veniam"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 41,
+    "fields": {
+      "created_at": "2024-04-27T18:53:32.693Z",
+      "updated_at": "2024-04-27T18:53:32.693Z",
+      "author": 2,
+      "post": 10,
+      "reply_to": 34,
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <em>eu fugiat nulla pariatur</em>."
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 42,
+    "fields": {
+      "created_at": "2024-04-27T18:53:39.467Z",
+      "updated_at": "2024-04-27T18:53:39.467Z",
+      "author": 17,
+      "post": 10,
+      "reply_to": 34,
+      "text": "Excepteur sint occaecat cupidatat non proident"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 43,
+    "fields": {
+      "created_at": "2024-04-27T18:53:52.975Z",
+      "updated_at": "2024-04-27T18:53:52.975Z",
+      "author": 3,
+      "post": 10,
+      "reply_to": 34,
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 44,
+    "fields": {
+      "created_at": "2024-04-27T19:32:46.233Z",
+      "updated_at": "2024-04-27T19:32:46.233Z",
+      "author": 2,
+      "post": 10,
+      "reply_to": 34,
+      "text": "Eaque <strong>ipsa quae ab illo</strong> inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 45,
+    "fields": {
+      "created_at": "2024-04-27T19:32:57.403Z",
+      "updated_at": "2024-04-27T19:32:57.403Z",
+      "author": 17,
+      "post": 10,
+      "reply_to": 34,
+      "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 46,
+    "fields": {
+      "created_at": "2024-04-27T19:33:09.616Z",
+      "updated_at": "2024-04-27T19:33:09.616Z",
+      "author": 3,
+      "post": 10,
+      "reply_to": 42,
+      "text": "Qui ratione voluptatem sequi nesciunt"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 47,
+    "fields": {
+      "created_at": "2024-04-27T19:33:12.843Z",
+      "updated_at": "2024-04-27T19:33:12.843Z",
+      "author": 2,
+      "post": 10,
+      "reply_to": 42,
+      "text": "Consectetur"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 48,
+    "fields": {
+      "created_at": "2024-04-27T19:33:15.323Z",
+      "updated_at": "2024-04-27T19:33:15.323Z",
+      "author": 17,
+      "post": 10,
+      "reply_to": 42,
+      "text": "Ut enim ad minima veniam"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 49,
+    "fields": {
+      "created_at": "2024-04-27T19:33:17.307Z",
+      "updated_at": "2024-04-27T19:33:17.307Z",
+      "author": 3,
+      "post": 10,
+      "reply_to": 42,
+      "text": "Lorem ipsum dolor sit amet"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 50,
+    "fields": {
+      "created_at": "2024-04-01T12:42:30.140Z",
+      "updated_at": "2024-04-01T12:42:30.140Z",
+      "author": 2,
+      "post": 23,
+      "reply_to": null,
+      "text": "Ut enim ad minim veniam"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 51,
+    "fields": {
+      "created_at": "2024-04-01T13:53:10.952Z",
+      "updated_at": "2024-04-01T13:53:10.952Z",
+      "author": 17,
+      "post": 23,
+      "reply_to": 50,
+      "text": "Duis aute irure dolor in <strong>reprehenderit in voluptate</strong> velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 52,
+    "fields": {
+      "created_at": "2024-04-04T19:35:48.833Z",
+      "updated_at": "2024-04-22T19:36:54.293Z",
+      "author": 2,
+      "post": 10,
+      "reply_to": null,
+      "text": "Excepteur sint occaecat cupidatat non proident"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 57,
+    "fields": {
+      "created_at": "2024-04-17T18:11:14.309Z",
+      "updated_at": "2024-04-17T18:15:03.757Z",
+      "author": 3,
+      "post": 30,
+      "reply_to": null,
+      "text": "<em>Sed ut perspiciatis unde omnis iste</em> natus error sit voluptatem accusantium doloremque laudantium"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 58,
+    "fields": {
+      "created_at": "2024-04-17T18:26:00.318Z",
+      "updated_at": "2024-04-17T18:26:00.318Z",
+      "author": 2,
+      "post": 30,
+      "reply_to": null,
+      "text": "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 59,
+    "fields": {
+      "created_at": "2024-04-18T10:52:23.350Z",
+      "updated_at": "2024-04-18T10:52:23.350Z",
+      "author": 17,
+      "post": 30,
+      "reply_to": null,
+      "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 60,
+    "fields": {
+      "created_at": "2024-04-19T18:44:09.868Z",
+      "updated_at": "2024-04-19T18:44:09.868Z",
+      "author": 3,
+      "post": 10,
+      "reply_to": null,
+      "text": "Qui ratione voluptatem sequi nesciunt"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 62,
+    "fields": {
+      "created_at": "2024-04-30T17:35:26.226Z",
+      "updated_at": "2024-04-30T17:35:26.226Z",
+      "author": 2,
+      "post": 10,
+      "reply_to": 52,
+      "text": "Consectetur"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 64,
+    "fields": {
+      "created_at": "2024-05-06T14:17:49.994Z",
+      "updated_at": "2024-05-06T14:17:49.994Z",
+      "author": 17,
+      "post": 30,
+      "reply_to": null,
+      "text": "Ut enim ad minima veniam"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 65,
+    "fields": {
+      "created_at": "2024-05-10T11:57:46.870Z",
+      "updated_at": "2024-05-10T11:57:46.870Z",
+      "author": 2,
+      "post": 30,
+      "reply_to": null,
+      "text": "Lorem ipsum dolor sit amet"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 66,
+    "fields": {
+      "created_at": "2024-05-10T11:57:55.793Z",
+      "updated_at": "2024-05-30T12:42:27.782Z",
+      "author": 2,
+      "post": 30,
+      "reply_to": null,
+      "text": "Ut enim ad minim veniam"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 67,
+    "fields": {
+      "created_at": "2024-05-10T11:58:14.131Z",
+      "updated_at": "2024-07-05T13:47:52.976Z",
+      "author": 2,
+      "post": 30,
+      "reply_to": null,
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 68,
+    "fields": {
+      "created_at": "2024-05-10T11:58:22.296Z",
+      "updated_at": "2024-07-05T15:10:14.982Z",
+      "author": 2,
+      "post": 30,
+      "reply_to": null,
+      "text": "<p><u>Excepteur sint occaecat cupidatat non proident</u></p>"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 69,
+    "fields": {
+      "created_at": "2024-05-14T14:07:55.812Z",
+      "updated_at": "2024-07-05T14:49:33.557Z",
+      "author": 3,
+      "post": 30,
+      "reply_to": null,
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 70,
+    "fields": {
+      "created_at": "2024-05-14T17:44:49.987Z",
+      "updated_at": "2024-05-14T17:44:49.987Z",
+      "author": 3,
+      "post": 18,
+      "reply_to": null,
+      "text": "Eaque ipsa quae ab illo <strong>inventore veritatis</strong> et quasi architecto beatae vitae dicta sunt explicabo."
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 71,
+    "fields": {
+      "created_at": "2024-05-20T16:30:52.179Z",
+      "updated_at": "2024-07-05T15:10:02.730Z",
+      "author": 2,
+      "post": 38,
+      "reply_to": null,
+      "text": "<p>Nemo enim ipsam voluptatem quia <em>voluptas <s>sit aspernatur</s></em><s> </s>aut odit aut fugit</p>"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 76,
+    "fields": {
+      "created_at": "2024-06-20T14:56:23.892Z",
+      "updated_at": "2024-06-20T14:56:23.892Z",
+      "author": 17,
+      "post": 10,
+      "reply_to": null,
+      "text": "Qui ratione voluptatem sequi nesciunt"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 77,
+    "fields": {
+      "created_at": "2024-06-20T14:56:42.756Z",
+      "updated_at": "2024-06-20T14:56:42.756Z",
+      "author": 17,
+      "post": 10,
+      "reply_to": 76,
+      "text": "<s>Consectetur"
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 14,
+    "fields": {
+      "owner": 2,
+      "vote": 1,
+      "obj": 34
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 15,
+    "fields": {
+      "owner": 17,
+      "vote": 1,
+      "obj": 32
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 21,
+    "fields": {
+      "owner": 3,
+      "vote": -1,
+      "obj": 52
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 23,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 57
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 24,
+    "fields": {
+      "owner": 17,
+      "vote": 1,
+      "obj": 58
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 25,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 6
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 26,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 15
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 27,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 17
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 28,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 22
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 29,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 23
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 30,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 24
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 32,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 30
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 33,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 50
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 34,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 31
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 35,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 35
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 36,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 40
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 37,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 41
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 38,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 42
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 39,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 43
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 40,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 44
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 41,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 45
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 42,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 46
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 43,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 47
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 44,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 48
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 45,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 49
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 46,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 51
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 47,
+    "fields": {
+      "owner": 3,
+      "vote": 1,
+      "obj": 59
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 48,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 60
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 51,
+    "fields": {
+      "owner": 17,
+      "vote": 1,
+      "obj": 62
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 53,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 64
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 54,
+    "fields": {
+      "owner": 2,
+      "vote": -1,
+      "obj": 64
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 56,
+    "fields": {
+      "owner": 16,
+      "vote": 0,
+      "obj": 52
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 57,
+    "fields": {
+      "owner": 16,
+      "vote": -1,
+      "obj": 58
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 58,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 65
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 59,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 66
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 60,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 67
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 61,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 68
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 62,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 68
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 63,
+    "fields": {
+      "owner": 3,
+      "vote": 1,
+      "obj": 66
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 64,
+    "fields": {
+      "owner": 2,
+      "vote": 1,
+      "obj": 69
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 65,
+    "fields": {
+      "owner": 3,
+      "vote": 1,
+      "obj": 67
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 66,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 65
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 67,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 70
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 68,
+    "fields": {
+      "owner": 2,
+      "vote": 1,
+      "obj": 70
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 69,
+    "fields": {
+      "owner": 17,
+      "vote": 1,
+      "obj": 68
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 70,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 71
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 75,
+    "fields": {
+      "owner": 17,
+      "vote": 1,
+      "obj": 76
+    }
+  },
+  {
+    "model": "rating.commentrating",
+    "pk": 76,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 77
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 1,
+    "fields": {
+      "owner": 3,
+      "vote": 1,
+      "obj": 10
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 2,
+    "fields": {
+      "owner": 17,
+      "vote": 1,
+      "obj": 30
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 4,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 18
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 5,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 22
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 7,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 23
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 8,
+    "fields": {
+      "owner": 3,
+      "vote": 1,
+      "obj": 22
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 10,
+    "fields": {
+      "owner": 2,
+      "vote": -1,
+      "obj": 18
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 11,
+    "fields": {
+      "owner": 17,
+      "vote": -1,
+      "obj": 23
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 12,
+    "fields": {
+      "owner": 3,
+      "vote": 1,
+      "obj": 23
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 14,
+    "fields": {
+      "owner": 16,
+      "vote": 0,
+      "obj": 30
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 15,
+    "fields": {
+      "owner": 3,
+      "vote": 0,
+      "obj": 30
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 17,
+    "fields": {
+      "owner": 17,
+      "vote": 0,
+      "obj": 38
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 44,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 30
+    }
+  },
+  {
+    "model": "rating.postrating",
+    "pk": 45,
+    "fields": {
+      "owner": 2,
+      "vote": 0,
+      "obj": 10
+    }
+  },
+  {
+    "model": "subscription.favorite",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "post": 23
+    }
+  },
+  {
+    "model": "subscription.favorite",
+    "pk": 5,
+    "fields": {
+      "user": 16,
+      "post": 30
+    }
+  },
+  {
+    "model": "subscription.favorite",
+    "pk": 20,
+    "fields": {
+      "user": 2,
+      "post": 30
+    }
+  },
+  {
+    "model": "subscription.categorysubscription",
+    "pk": 33,
+    "fields": {
+      "subscriber": 3,
+      "subscribed_to": 11
+    }
+  },
+  {
+    "model": "subscription.categorysubscription",
+    "pk": 44,
+    "fields": {
+      "subscriber": 3,
+      "subscribed_to": 1
+    }
+  },
+  {
+    "model": "subscription.usersubscription",
+    "pk": 14,
+    "fields": {
+      "subscriber": 3,
+      "subscribed_to": 2
+    }
+  },
+  {
+    "model": "subscription.usersubscription",
+    "pk": 18,
+    "fields": {
+      "subscriber": 16,
+      "subscribed_to": 2
+    }
+  },
+  {
+    "model": "subscription.usersubscription",
+    "pk": 28,
+    "fields": {
+      "subscriber": 2,
+      "subscribed_to": 17
+    }
+  },
+  {
+    "model": "subscription.usersubscription",
+    "pk": 33,
+    "fields": {
+      "subscriber": 3,
+      "subscribed_to": 17
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$7k6qhEhH9Ci3x6wHs01p5q$SjkZH1vB4KnpUNOu+rb7Zfa+GxdXrtrCk0CLS+IITxA=",
+      "last_login": "2024-04-01T15:00:03.150Z",
+      "is_superuser": false,
+      "username": "blogger",
+      "first_name": "first",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-11-13T14:04:30Z",
+      "email": "blogger@blog.bl",
+      "phone_number": "+79657777777",
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$AxiBfeqPLlFvyK77I2Vg6l$LvYcHVwrb5sYLPsp+OgcOUKEIoFIVPbOBm8RWlYOOyY=",
+      "last_login": "2024-04-01T17:58:40.476Z",
+      "is_superuser": false,
+      "username": "librarian",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-11-17T15:02:42Z",
+      "email": "test@test.tv",
+      "phone_number": null,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 16,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$cEkTrRnvUO4xSQBzURNKfO$1fZ6u61aFJH8uWfud6CrO8Zhx9L4J+hv+Qmno5HVusI=",
+      "last_login": "2024-04-01T14:53:00.503Z",
+      "is_superuser": false,
+      "username": "reader",
+      "first_name": "sminem",
+      "last_name": "bogdanoff",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-11T19:40:49.067Z",
+      "email": "sminem@pump.it",
+      "phone_number": null,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 17,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$DEeLaLVNOO5UMDTFNFV5GV$Lz65Ji6cuF5tswQtmkK+vqa19uvafP96RpxJGZ78Wqc=",
+      "last_login": "2024-04-01T14:17:34.915Z",
+      "is_superuser": false,
+      "username": "loremipsumenjoyer",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-05-06T14:17:20.906Z",
+      "email": "read@read.tv",
+      "phone_number": null,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 2,
+    "fields": {
+      "telegram_id": null,
+      "photo": "default/no-ava.png"
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 3,
+    "fields": {
+      "telegram_id": "durov",
+      "photo": "default/no-ava.png"
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 16,
+    "fields": {
+      "telegram_id": null,
+      "photo": "default/no-ava.png"
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 17,
+    "fields": {
+      "telegram_id": "fakeid",
+      "photo": "default/no-ava.png"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 6,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 6,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 6,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 6,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add author",
+      "content_type": 7,
+      "codename": "add_author"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change author",
+      "content_type": 7,
+      "codename": "change_author"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete author",
+      "content_type": 7,
+      "codename": "delete_author"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view author",
+      "content_type": 7,
+      "codename": "view_author"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add blog",
+      "content_type": 8,
+      "codename": "add_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change blog",
+      "content_type": 8,
+      "codename": "change_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete blog",
+      "content_type": 8,
+      "codename": "delete_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view blog",
+      "content_type": 8,
+      "codename": "view_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Category",
+      "content_type": 9,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Category",
+      "content_type": 9,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Category",
+      "content_type": 9,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Category",
+      "content_type": 9,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add comment",
+      "content_type": 10,
+      "codename": "add_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change comment",
+      "content_type": 10,
+      "codename": "change_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete comment",
+      "content_type": 10,
+      "codename": "delete_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view comment",
+      "content_type": 10,
+      "codename": "view_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add user profile",
+      "content_type": 11,
+      "codename": "add_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change user profile",
+      "content_type": 11,
+      "codename": "change_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete user profile",
+      "content_type": 11,
+      "codename": "delete_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view user profile",
+      "content_type": 11,
+      "codename": "view_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add profile",
+      "content_type": 11,
+      "codename": "add_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change profile",
+      "content_type": 11,
+      "codename": "change_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete profile",
+      "content_type": 11,
+      "codename": "delete_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view profile",
+      "content_type": 11,
+      "codename": "view_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add comment rating",
+      "content_type": 12,
+      "codename": "add_commentrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change comment rating",
+      "content_type": 12,
+      "codename": "change_commentrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete comment rating",
+      "content_type": 12,
+      "codename": "delete_commentrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view comment rating",
+      "content_type": 12,
+      "codename": "view_commentrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add blog rating",
+      "content_type": 13,
+      "codename": "add_blograting"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change blog rating",
+      "content_type": 13,
+      "codename": "change_blograting"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete blog rating",
+      "content_type": 13,
+      "codename": "delete_blograting"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view blog rating",
+      "content_type": 13,
+      "codename": "view_blograting"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add author rating",
+      "content_type": 14,
+      "codename": "add_authorrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change author rating",
+      "content_type": 14,
+      "codename": "change_authorrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete author rating",
+      "content_type": 14,
+      "codename": "delete_authorrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view author rating",
+      "content_type": 14,
+      "codename": "view_authorrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add ck editor post images",
+      "content_type": 15,
+      "codename": "add_ckeditorpostimages"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change ck editor post images",
+      "content_type": 15,
+      "codename": "change_ckeditorpostimages"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete ck editor post images",
+      "content_type": 15,
+      "codename": "delete_ckeditorpostimages"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view ck editor post images",
+      "content_type": 15,
+      "codename": "view_ckeditorpostimages"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+      "name": "Can add favorite",
+      "content_type": 16,
+      "codename": "add_favorite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+      "name": "Can change favorite",
+      "content_type": 16,
+      "codename": "change_favorite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+      "name": "Can delete favorite",
+      "content_type": 16,
+      "codename": "delete_favorite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+      "name": "Can view favorite",
+      "content_type": 16,
+      "codename": "view_favorite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+      "name": "Can add subscribe",
+      "content_type": 17,
+      "codename": "add_subscribe"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+      "name": "Can change subscribe",
+      "content_type": 17,
+      "codename": "change_subscribe"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+      "name": "Can delete subscribe",
+      "content_type": 17,
+      "codename": "delete_subscribe"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+      "name": "Can view subscribe",
+      "content_type": 17,
+      "codename": "view_subscribe"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+      "name": "Can add user rating",
+      "content_type": 14,
+      "codename": "add_userrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+      "name": "Can change user rating",
+      "content_type": 14,
+      "codename": "change_userrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+      "name": "Can delete user rating",
+      "content_type": 14,
+      "codename": "delete_userrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+      "name": "Can view user rating",
+      "content_type": 14,
+      "codename": "view_userrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+      "name": "Can add post rating",
+      "content_type": 13,
+      "codename": "add_postrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+      "name": "Can change post rating",
+      "content_type": 13,
+      "codename": "change_postrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+      "name": "Can delete post rating",
+      "content_type": 13,
+      "codename": "delete_postrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+      "name": "Can view post rating",
+      "content_type": 13,
+      "codename": "view_postrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+      "name": "Can add post",
+      "content_type": 8,
+      "codename": "add_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+      "name": "Can change post",
+      "content_type": 8,
+      "codename": "change_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+      "name": "Can delete post",
+      "content_type": 8,
+      "codename": "delete_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+      "name": "Can view post",
+      "content_type": 8,
+      "codename": "view_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+      "name": "Can add feed",
+      "content_type": 17,
+      "codename": "add_feed"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+      "name": "Can change feed",
+      "content_type": 17,
+      "codename": "change_feed"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+      "name": "Can delete feed",
+      "content_type": 17,
+      "codename": "delete_feed"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+      "name": "Can view feed",
+      "content_type": 17,
+      "codename": "view_feed"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+      "name": "Can add comment rating",
+      "content_type": 18,
+      "codename": "add_commentrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+      "name": "Can change comment rating",
+      "content_type": 18,
+      "codename": "change_commentrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+      "name": "Can delete comment rating",
+      "content_type": 18,
+      "codename": "delete_commentrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+      "name": "Can view comment rating",
+      "content_type": 18,
+      "codename": "view_commentrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 93,
+    "fields": {
+      "name": "Can add post rating",
+      "content_type": 19,
+      "codename": "add_postrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 94,
+    "fields": {
+      "name": "Can change post rating",
+      "content_type": 19,
+      "codename": "change_postrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 95,
+    "fields": {
+      "name": "Can delete post rating",
+      "content_type": 19,
+      "codename": "delete_postrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 96,
+    "fields": {
+      "name": "Can view post rating",
+      "content_type": 19,
+      "codename": "view_postrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 97,
+    "fields": {
+      "name": "Can add user rating",
+      "content_type": 20,
+      "codename": "add_userrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 98,
+    "fields": {
+      "name": "Can change user rating",
+      "content_type": 20,
+      "codename": "change_userrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 99,
+    "fields": {
+      "name": "Can delete user rating",
+      "content_type": 20,
+      "codename": "delete_userrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 100,
+    "fields": {
+      "name": "Can view user rating",
+      "content_type": 20,
+      "codename": "view_userrating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 101,
+    "fields": {
+      "name": "Can add category subscriptions",
+      "content_type": 21,
+      "codename": "add_categorysubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 102,
+    "fields": {
+      "name": "Can change category subscriptions",
+      "content_type": 21,
+      "codename": "change_categorysubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 103,
+    "fields": {
+      "name": "Can delete category subscriptions",
+      "content_type": 21,
+      "codename": "delete_categorysubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 104,
+    "fields": {
+      "name": "Can view category subscriptions",
+      "content_type": 21,
+      "codename": "view_categorysubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 105,
+    "fields": {
+      "name": "Can add user subscriptions",
+      "content_type": 22,
+      "codename": "add_usersubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 106,
+    "fields": {
+      "name": "Can change user subscriptions",
+      "content_type": 22,
+      "codename": "change_usersubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 107,
+    "fields": {
+      "name": "Can delete user subscriptions",
+      "content_type": 22,
+      "codename": "delete_usersubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 108,
+    "fields": {
+      "name": "Can view user subscriptions",
+      "content_type": 22,
+      "codename": "view_usersubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 109,
+    "fields": {
+      "name": "Can add category subscriptions",
+      "content_type": 23,
+      "codename": "add_categorysubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 110,
+    "fields": {
+      "name": "Can change category subscriptions",
+      "content_type": 23,
+      "codename": "change_categorysubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 111,
+    "fields": {
+      "name": "Can delete category subscriptions",
+      "content_type": 23,
+      "codename": "delete_categorysubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 112,
+    "fields": {
+      "name": "Can view category subscriptions",
+      "content_type": 23,
+      "codename": "view_categorysubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 113,
+    "fields": {
+      "name": "Can add favorite",
+      "content_type": 24,
+      "codename": "add_favorite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 114,
+    "fields": {
+      "name": "Can change favorite",
+      "content_type": 24,
+      "codename": "change_favorite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 115,
+    "fields": {
+      "name": "Can delete favorite",
+      "content_type": 24,
+      "codename": "delete_favorite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 116,
+    "fields": {
+      "name": "Can view favorite",
+      "content_type": 24,
+      "codename": "view_favorite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 117,
+    "fields": {
+      "name": "Can add user subscriptions",
+      "content_type": 25,
+      "codename": "add_usersubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 118,
+    "fields": {
+      "name": "Can change user subscriptions",
+      "content_type": 25,
+      "codename": "change_usersubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 119,
+    "fields": {
+      "name": "Can delete user subscriptions",
+      "content_type": 25,
+      "codename": "delete_usersubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 120,
+    "fields": {
+      "name": "Can view user subscriptions",
+      "content_type": 25,
+      "codename": "view_usersubscriptions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 121,
+    "fields": {
+      "name": "Can add category subscription",
+      "content_type": 23,
+      "codename": "add_categorysubscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 122,
+    "fields": {
+      "name": "Can change category subscription",
+      "content_type": 23,
+      "codename": "change_categorysubscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 123,
+    "fields": {
+      "name": "Can delete category subscription",
+      "content_type": 23,
+      "codename": "delete_categorysubscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 124,
+    "fields": {
+      "name": "Can view category subscription",
+      "content_type": 23,
+      "codename": "view_categorysubscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 125,
+    "fields": {
+      "name": "Can add user subscription",
+      "content_type": 25,
+      "codename": "add_usersubscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 126,
+    "fields": {
+      "name": "Can change user subscription",
+      "content_type": 25,
+      "codename": "change_usersubscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 127,
+    "fields": {
+      "name": "Can delete user subscription",
+      "content_type": 25,
+      "codename": "delete_usersubscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 128,
+    "fields": {
+      "name": "Can view user subscription",
+      "content_type": 25,
+      "codename": "view_usersubscription"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 129,
+    "fields": {
+      "name": "Can add task result",
+      "content_type": 26,
+      "codename": "add_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 130,
+    "fields": {
+      "name": "Can change task result",
+      "content_type": 26,
+      "codename": "change_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 131,
+    "fields": {
+      "name": "Can delete task result",
+      "content_type": 26,
+      "codename": "delete_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 132,
+    "fields": {
+      "name": "Can view task result",
+      "content_type": 26,
+      "codename": "view_taskresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 133,
+    "fields": {
+      "name": "Can add chord counter",
+      "content_type": 27,
+      "codename": "add_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 134,
+    "fields": {
+      "name": "Can change chord counter",
+      "content_type": 27,
+      "codename": "change_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 135,
+    "fields": {
+      "name": "Can delete chord counter",
+      "content_type": 27,
+      "codename": "delete_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 136,
+    "fields": {
+      "name": "Can view chord counter",
+      "content_type": 27,
+      "codename": "view_chordcounter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 137,
+    "fields": {
+      "name": "Can add group result",
+      "content_type": 28,
+      "codename": "add_groupresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 138,
+    "fields": {
+      "name": "Can change group result",
+      "content_type": 28,
+      "codename": "change_groupresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 139,
+    "fields": {
+      "name": "Can delete group result",
+      "content_type": 28,
+      "codename": "delete_groupresult"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 140,
+    "fields": {
+      "name": "Can view group result",
+      "content_type": 28,
+      "codename": "view_groupresult"
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "Readers",
+      "permissions": []
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "Bloggers",
+      "permissions": [
+        33,
+        36,
+        29,
+        32
+      ]
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 6,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 7,
+    "fields": {
+      "app_label": "blog",
+      "model": "author"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 8,
+    "fields": {
+      "app_label": "blog",
+      "model": "post"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 9,
+    "fields": {
+      "app_label": "blog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 10,
+    "fields": {
+      "app_label": "blog",
+      "model": "comment"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 11,
+    "fields": {
+      "app_label": "users",
+      "model": "profile"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 12,
+    "fields": {
+      "app_label": "blog",
+      "model": "commentrating"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 13,
+    "fields": {
+      "app_label": "blog",
+      "model": "postrating"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 14,
+    "fields": {
+      "app_label": "blog",
+      "model": "userrating"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 15,
+    "fields": {
+      "app_label": "common",
+      "model": "ckeditorpostimages"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 16,
+    "fields": {
+      "app_label": "blog",
+      "model": "favorite"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 17,
+    "fields": {
+      "app_label": "blog",
+      "model": "feed"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 18,
+    "fields": {
+      "app_label": "rating",
+      "model": "commentrating"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 19,
+    "fields": {
+      "app_label": "rating",
+      "model": "postrating"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 20,
+    "fields": {
+      "app_label": "rating",
+      "model": "userrating"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 21,
+    "fields": {
+      "app_label": "blog",
+      "model": "categorysubscriptions"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 22,
+    "fields": {
+      "app_label": "blog",
+      "model": "usersubscriptions"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 23,
+    "fields": {
+      "app_label": "subscription",
+      "model": "categorysubscription"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 24,
+    "fields": {
+      "app_label": "subscription",
+      "model": "favorite"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 25,
+    "fields": {
+      "app_label": "subscription",
+      "model": "usersubscription"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 26,
+    "fields": {
+      "app_label": "django_celery_results",
+      "model": "taskresult"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 27,
+    "fields": {
+      "app_label": "django_celery_results",
+      "model": "chordcounter"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "id": 28,
+    "fields": {
+      "app_label": "django_celery_results",
+      "model": "groupresult"
+    }
+  }
+]

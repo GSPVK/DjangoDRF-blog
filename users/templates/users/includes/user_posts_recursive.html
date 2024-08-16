@@ -1,0 +1,77 @@
+{% load static %}
+{% load blog_extras %}
+{% load bleach_tags %}
+
+<div id="post_{{ post.id }}" class="container-center" style="clear: both">
+  <a class="not-styled-link" href="{% url 'users:profile' post.author.user.pk %}">
+    <img
+        class="img-thumbnail rounded-circle author-photo" src="{{ post.author.user.profile.photo.url }}" width="40"
+        height="40" alt="user photo">
+  </a>
+  <div class="author-name-info">
+    <a class="not-styled-link" href="{% url 'users:profile' post.author.user.pk %}">
+      <strong>{{ post.author.user.username }}</strong>,
+    </a>
+    <span
+        class="author-object-info">{{ post.created_at }}
+      {% if post.created_at != post.updated_at %}
+        (<em>updated_at: {{ post.updated_at }}</em>)
+      {% endif %}
+    </span>
+    <br>
+    Category: <a href="{% url 'blog:posts' %}?category={{ post.category }}">{{ post.category }}</a>
+  </div>
+</div>
+
+<div class="blog-content">
+  <div class="container">
+    <div class="header-container">
+      <h4>
+        <a href="{% url 'blog:post-detail' post.pk %}">{{ post.title }}</a>
+      </h4>
+      {% if user.is_staff or request.user == post.author.user %}
+        <div class="btn-group-right">
+          <a class="btn btn-sm btn-warning btn-position text-white" href="{% url 'blog:edit-post' post.pk %}">Edit</a>
+          <a class="btn btn-sm btn-danger btn-position text-white" href="{% url 'blog:delete-post' post.pk %}">Delete</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {{ post.text|remove_empty_paragraphs|slice:"300"|safe|bleach }}
+
+  <div class="post-actions">
+    <a class href="{% url 'rating:post-rating' post.pk 'LIKE' %}?next={{ request.path }}?posts_page={{ posts.number }}#post_{{ post.id }}">
+      <svg class="bi pe-none"
+           style="margin-right: 3px; color:{% if post.user_vote == 1 %}lightgreen{% else %}gray{% endif %}" width="18"
+           height="18">
+        <use href="#upvote"></use>
+      </svg>
+    </a>
+
+    {% include 'includes/rating_color.html' with rating=post.rating %}
+
+    <a href="{% url 'rating:post-rating' post.pk 'DISLIKE' %}?next={{ request.path }}?posts_page={{ posts.number }}#post_{{ post.id }}">
+      <svg class="bi pe-none me-2"
+           style="margin-left: 3px; color:{% if post.user_vote == -1 %}lightcoral{% else %}gray{% endif %}" width="18"
+           height="18">
+        <use href="#downvote"></use>
+      </svg>
+    </a>
+    {% include 'blog/includes/post_favorites.html' %}
+    <span>
+    {% if post.comments_count > 0 %}
+      <svg class="bi pe-none me-2" width="16" height="16">
+        <use href="#have-comments"></use>
+      </svg>
+    {% else %}
+      <svg class="bi pe-none me-2 svg" width="16" height="16">
+        <use href="#no-comments"></use>
+      </svg>
+    {% endif %}
+      {{ post.comments_count }}
+    </span>
+  </div>
+</div>
+<br>
+<br>

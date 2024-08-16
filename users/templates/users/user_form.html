@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}
+  <title>Edit my profile</title>
+{% endblock title %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="mb-3">Edit Profile</h2>
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+
+          <!-- UserForm fields -->
+          <div class="form-group mb-3">
+            <label for="{{ form.user.first_name.id_for_label }}"><strong style="color:red">*</strong> First Name</label>
+            <input type="text" class="form-control{% if form.user.first_name.errors %} is-invalid{% endif %}"
+                   id="{{ form.user.first_name.id_for_label }}" name="{{ form.user.first_name.html_name }}"
+                   placeholder="Enter first name" value="{{ form.user.first_name.value|default_if_none:'' }}">
+            {% for error in form.user.first_name.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.user.last_name.id_for_label }}"><strong style="color:red">*</strong> Last Name</label>
+            <input type="text" class="form-control{% if form.user.last_name.errors %} is-invalid{% endif %}"
+                   id="{{ form.user.last_name.id_for_label }}" name="{{ form.user.last_name.html_name }}"
+                   placeholder="Enter last name" value="{{ form.user.last_name.value|default_if_none:'' }}">
+            {% for error in form.user.last_name.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.user.email.id_for_label }}"><strong style="color:red">*</strong> Email</label>
+            <input type="email" class="form-control{% if form.user.email.errors %} is-invalid{% endif %}"
+                   id="{{ form.user.email.id_for_label }}" name="{{ form.user.email.html_name }}"
+                   placeholder="Enter email" value="{{ form.user.email.value|default_if_none:'' }}">
+            {% for error in form.user.email.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.user.phone_number.id_for_label }}">Phone Number</label>
+            <input type="text" class="form-control{% if form.user.phone_number.errors %} is-invalid{% endif %}"
+                   id="{{ form.user.phone_number.id_for_label }}" name="{{ form.user.phone_number.html_name }}"
+                   placeholder="Enter phone number" value="{{ form.user.phone_number.value|default_if_none:'' }}">
+            {% for error in form.user.phone_number.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <!-- ProfileForm fields -->
+          <div class="form-group mb-3">
+            <label for="{{ form.profile.telegram_id.id_for_label }}">Telegram</label>
+            <input type="text" class="form-control{% if form.profile.telegram_id.errors %} is-invalid{% endif %}"
+                   id="{{ form.profile.telegram_id.id_for_label }}" name="{{ form.profile.telegram_id.html_name }}"
+                   placeholder="Enter your Telegram username" value="{{  form.telegram_id.value|default_if_none:'' }}">
+            {% for error in form.profile.telegram_id.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.profile.photo.id_for_label }}">Photo</label>
+            <input type="file" class="form-control{% if form.profile.photo.errors %} is-invalid{% endif %}"
+                   id="{{ form.profile.photo.id_for_label }}" name="{{ form.profile.photo.html_name }}">
+            {% for error in form.profile.photo.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <button name="save_user" type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock content %}

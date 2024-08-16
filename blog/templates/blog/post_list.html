@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}
+  <title>All blogs</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-10">
+        <h1 class="float-start">
+          {{ header }}
+        </h1>
+
+        {% if header != 'All posts' %}
+          <div class="d-inline-block" style="margin-left: 5%">
+            {% if not subscribed %}
+              <form method="post" action="{% url 'subscription:change-subscription' 'category' category.pk 'subscribe' %}?next={{ request.path }}">
+                {% csrf_token %}
+                <input type="hidden" name="redirect_to" value="{{ request.get_full_path }}">
+                <button type="submit" class="btn btn-xs btn-success">Subscribe!</button>
+              </form>
+            {% elif subscribed %}
+              <form method="post" action="{% url 'subscription:change-subscription' 'category' category.pk 'unsubscribe' %}?next={{ request.path }}">
+                {% csrf_token %}
+                <input type="hidden" name="redirect_to" value="{{ request.get_full_path }}">
+                <button type="submit" class="btn btn-xs btn-danger">Unsubscribe!</button>
+              </form>
+            {% endif %}
+            <p style="margin-bottom: 0"><strong>Subscribers:</strong> {{ subscribers_count }} </p>
+          </div>
+        {% endif %}
+
+        {% if perms.blog.add_post %}
+            <a class="btn btn-success float-end text-white" href="{% url 'blog:create-post' %}">Create new post!</a>
+        {% endif %}
+
+        {% for post in post_list %}
+          {% include 'blog/includes/posts.html' %}
+        {% endfor %}
+      </div>
+      {% include 'blog/includes/filtering.html' %}
+    </div>
+  </div>
+  {% include 'includes/base_pagination.html' %}
+{% endblock content %}

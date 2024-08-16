@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ error_code }} - {{ error_title }}</title>
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}"/>
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="container p-5 bg-white rounded shadow text-center" style="max-width: 600px;">
+        <h1 class="display-1 text-primary">{{ error_code }}</h1>
+        <h2 class="mb-4">{{ error_title }}</h2>
+        <p class="lead">{{ error_message }}</p>
+        <a href="/" class="btn btn-primary mt-3">Go to Home</a>
+    </div>
+</body>
+</html>

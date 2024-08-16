@@ -1,0 +1,80 @@
+{% load static %}
+{% load blog_extras %}
+{% block extra_js %}
+  <script src="{% static 'blog/js/comments.js' %}"></script>
+{% endblock extra_js %}
+{% load bleach_tags %}
+
+<br>
+<li class="bi bi-list">
+  <div id="comment_{{ comment.id }}" class="container-center">
+    <a class="not-styled-link" href="{% url 'users:profile' comment.author.pk %}">
+      <img
+          class="img-thumbnail rounded-circle author-photo" src="{{ comment.author.profile.photo.url }}" width="40"
+          height="40" alt="user photo">
+    </a>
+    <div class="author-name-info">
+      <a class="not-styled-link" href="{% url 'users:profile' comment.author.pk %}">
+        <strong>{{ comment.author }}</strong>
+      </a>
+      ,
+      <span class="author-object-info">
+      {{ comment.created_at }}
+        {% if comment.created_at != comment.updated_at %}
+          (<em>updated_at: {{ comment.updated_at }}</em>)
+        {% endif %}
+    </span>
+      <br>
+      {% if user.is_staff or comment.author == request.user %}
+        <a class="btn btn-xs btn-warning text-white" href="{% url 'blog:edit-comment' comment.post.pk comment.pk %}">Edit</a>
+        <a class="btn btn-xs btn-danger text-white" href="{% url 'blog:delete-comment' comment.post.pk comment.pk %}">Delete</a>
+    {% endif %}
+    </div>
+  </div>
+</li>
+
+<div class="comment-content image-content">
+  {{ comment.text|remove_empty_paragraphs|safe|bleach }}
+</div>
+<div class="container-center">
+  <div class=comment-actions">
+    <a href="{% url 'rating:comment-rating' post.pk comment.pk 'LIKE' %}?next={{ request.path }}?page={{ page_obj.number }}#comment_{{ comment.id }}">
+      <svg class="bi pe-none" width="14" height="14"
+           style="color:{% if comment.user_vote == 1 %}lightgreen{% else %}gray{% endif %}">
+        <use href="#upvote"></use>
+      </svg>
+    </a>
+    {% include 'includes/rating_color.html' with rating=comment.rating %}
+    <a
+        href="{% url 'rating:comment-rating' post.pk comment.pk 'DISLIKE' %}?next={{ request.path }}?page={{ page_obj.number }}#comment_{{ comment.id }}">
+      <svg class="bi pe-none me-2" width="14" height="14"
+           style="color:{% if comment.user_vote == -1 %}lightcoral{% else %}gray{% endif %}">
+        <use href="#downvote"></use>
+      </svg>
+    </a>
+    <a href="{% url 'blog:reply-comment' post.pk comment.pk %}">Reply</a>
+  </div>
+</div>
+
+{% if comment.replies_list %}
+  <button class="show-replies btn btn-link" onclick="toggleComments(this)">
+    Show replies
+  </button>
+  <div class="comment-replies">
+    <ul>
+      {% for reply in comment.replies_list %}
+        {% include 'blog/includes/blog_comments_recursive.html' with comment=reply user=user request=request %}
+      {% endfor %}
+      {% if comment.replies_count > 3 %}
+        <button class="show-replies btn btn-link" onclick="showAllReplies(this)">
+          Expand entire thread
+        </button>
+        <div class="comment-thread">
+          {% for reply in comment.replies_more %}
+            {% include 'blog/includes/blog_comments_recursive.html' with comment=reply user=user request=request %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </ul>
+  </div>
+{% endif %}

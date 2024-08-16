@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load blog_extras %}
+
+{% block title %}
+  <title>My favorites</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-10">
+        <h1 class="float-start">
+          My favorites
+        </h1>
+
+        {% for post in post_list %}
+          {% include 'blog/includes/posts.html' %}
+        {% endfor %}
+      
+      </div>
+      {% include 'blog/includes/filtering.html' %}
+    </div>
+  </div>
+  {% include 'includes/base_pagination.html' %}
+{% endblock content %}

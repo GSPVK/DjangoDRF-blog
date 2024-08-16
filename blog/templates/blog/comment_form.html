@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+  <title>Create a comment</title>
+{% endblock title %}
+
+{% block content %}
+    {% if is_reply %}
+        <h1>Reply to {{ comment.author.username }}'s comment</h1>
+    {% else %}
+        <h1>Comment on {{ blog.title }}</h1>
+    {% endif %}
+  <form method="post">
+    {% csrf_token %}
+      {{ form.media }}
+      {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Post!</button>
+  </form>
+{% endblock content %}

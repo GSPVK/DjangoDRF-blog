@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="mb-3">Register</h2>
+        <form method="post">
+          {% csrf_token %}
+          <div class="form-group mb-3">
+            <label for="{{ form.username.id_for_label }}"><strong style="color:red">*</strong> Username</label>
+            <input type="text" class="form-control{% if form.username.errors %} is-invalid{% endif %}"
+                   id="{{ form.username.id_for_label }}" name="{{ form.username.html_name }}"
+                   placeholder="Enter username" value="{{ form.username.value|default_if_none:'' }}">
+            {% for error in form.username.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.email.id_for_label }}"><strong style="color:red">*</strong> Email</label>
+            <input type="email" class="form-control{% if form.email.errors %} is-invalid{% endif %}"
+                   id="{{ form.email.id_for_label }}" name="{{ form.email.html_name }}" placeholder="Enter email"
+                   value="{{ form.email.value|default_if_none:'' }}">
+            {% for error in form.email.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-choice mb-3">
+            <label class="form-label"><strong style="color:red">*</strong> User Group</label>
+            {% for value, label in form.user_group.field.choices %}
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="user_group" id="id_user_group_{{ forloop.counter0 }}"
+                       value="{{ value }}" required>
+                <label class="form-check-label" for="id_user_group_{{ forloop.counter0 }}">
+                  {{ label }}
+                </label>
+              </div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.password1.id_for_label }}"><strong style="color:red">*</strong> Password</label>
+            <input type="password" class="form-control{% if form.password1.errors %} is-invalid{% endif %}"
+                   id="{{ form.password1.id_for_label }}" name="{{ form.password1.html_name }}"
+                   placeholder="Enter password">
+            <div id="passwordHelpBlock" class="form-text">
+              Your password must contain at least 8 characters, contain letters and numbers, and must not contain
+              spaces,
+              special characters, or emoji.
+            </div>
+            {% for error in form.password1.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.password2.id_for_label }}"><strong style="color:red">*</strong> Confirm Password</label>
+            <input type="password" class="form-control{% if form.password2.errors %} is-invalid{% endif %}"
+                   id="{{ form.password2.id_for_label }}" name="{{ form.password2.html_name }}"
+                   placeholder="Confirm password">
+            {% for error in form.password2.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <hr>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.phone_number.id_for_label }}">Phone number</label>
+            <input type="text" class="form-control{% if form.phone_number.errors %} is-invalid{% endif %}"
+                   id="{{ form.phone_number.id_for_label }}" name="{{ form.phone_number.html_name }}"
+                   placeholder="Enter phone number"
+                   value="{{ form.phone_number.value|default_if_none:'' }}">
+            {% for error in form.phone_number.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.first_name.id_for_label }}">First name</label>
+            <input type="text" class="form-control{% if form.first_name.errors %} is-invalid{% endif %}"
+                   id="{{ form.first_name.id_for_label }}" name="{{ form.first_name.html_name }}"
+                   placeholder="Enter your first name"
+                   value="{{ form.first_name.value|default_if_none:'' }}">
+            {% for error in form.first_name.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.last_name.id_for_label }}">Last name</label>
+            <input type="text" class="form-control{% if form.last_name.errors %} is-invalid{% endif %}"
+                   id="{{ form.last_name.id_for_label }}" name="{{ form.last_name.html_name }}"
+                   placeholder="Enter your last name"
+                   value="{{ form.last_name.value|default_if_none:'' }}">
+            {% for error in form.last_name.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <button type="submit" class="btn btn-primary mb-2">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

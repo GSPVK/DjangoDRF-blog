@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}
+  <title>{{ object.username }}'s Profile</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="text-center user-profile">
+    <div>
+      <h1>{{ object.username }}
+      </h1>
+      <p><strong>Rating:</strong> {% include 'includes/rating_color.html' with rating=rating %}</p>
+    </div>
+
+    <img src="{{ object.profile.photo.url }}" alt="user profile photo" width="150" height="150" class="img-thumbnail">
+
+    <p>{{ object.author.bio }}</p>
+    <p><strong>Join date:</strong> {{ object.date_joined }}</p>
+    {% with object.profile.telegram_id|cut:'@' as user_telegram %}
+      {% if user_telegram != 'None' %}
+        <a><strong>Telegram:</strong>
+        <a href="https://t.me/{{ user_telegram }}" target="_blank"> @{{ user_telegram }}</a>
+      {% endif %}
+    {% endwith %}
+    <p><strong>Subscribers:</strong> {{ object.subscribers_count }} </p>
+    <div>
+      {% if object != request.user %}
+        {% if not subscribed %}
+          <form method="post"
+                action="{% url 'subscription:change-subscription' 'user' object.pk 'subscribe' %}?next={{ request.path }}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-success">Subscribe!</button>
+          </form>
+        {% else %}
+          <form method="post"
+                action="{% url 'subscription:change-subscription' 'user' object.pk 'unsubscribe' %}?next={{ request.path }}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Unsubscribe!</button>
+          </form>
+        {% endif %}
+      {% else %}
+        <a class="btn btn-warning text-white" href="{% url 'users:profile-edit' object.pk %}">Edit</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <br>
+
+  {# Posts and Comments #}
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <h2 class="text-center">Posts</h2>
+        {% if posts %}
+          {% for post in posts %}
+            {#            {% include 'blog/includes/posts.html' %}#}
+            {% include 'users/includes/user_posts_recursive.html' %}
+          {% endfor %}
+          {% include 'users/includes/profile_posts_pagination.html' %}
+        {% else %}
+          Nothing here.
+        {% endif %}
+      </div>
+      <div class="col-6 vertical">
+        <h2 class="text-center">Comments</h2>
+        {% if comments %}
+          {% for comment in comments %}
+            {% include 'users/includes/user_comments_recursive.html' %}
+          {% endfor %}
+          {% include 'users/includes/profile_comments_pagination.html' %}
+        {% else %}
+          Nothing here
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

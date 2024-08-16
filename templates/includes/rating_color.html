@@ -1,0 +1,7 @@
+{% if rating > 0 %}
+  <span style="color: limegreen">+{{ rating }}</span>
+{% elif rating < 0 %}
+  <span style="color: orangered">{{ rating }}</span>
+{% else %}
+  <span>{{ rating }}</span>
+{% endif %}

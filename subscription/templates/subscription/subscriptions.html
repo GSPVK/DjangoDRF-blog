@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load blog_extras %}
+
+{% block content %}
+
+  <h1 style="text-align: center">My subscriptions</h1>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-6 text-center">
+        <h2>Users</h2>
+        {% if followed_users %}
+          {% for user in followed_users %}
+           <a href="{% url 'users:profile' user.subscribed_to.pk %}">{{ user.name }}</a>
+            <form method="post"
+                  action="{% url 'subscription:change-subscription' 'user' user.subscribed_to.pk 'unsubscribe' %}?next={{ request.path }}">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger">Unsubscribe!</button>
+            </form>
+          {% endfor %}
+          <br>
+          {% include 'subscription/includes/followed_users_pagination.html' %}
+        {% else %}
+          Nothing here.
+        {% endif %}
+      </div>
+
+      <div class="col-6 vertical text-center">
+        <h2>Categories</h2>
+        {% if followed_categories %}
+          {% for category in followed_categories %}
+            <a href="{% url 'blog:posts' %}?category={{ category.subscribed_to.title }}">{{ category.name }}</a>
+            <form method="post"
+                  action="{% url 'subscription:change-subscription' 'category' category.subscribed_to.pk 'unsubscribe' %}?next={{ request.path }}">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger">Unsubscribe!</button>
+            </form>
+          {% endfor %}
+          <br>
+          {% include 'subscription/includes/followed_categories_pagination.html' %}
+        {% else %}
+          Nothing here
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+
+{% endblock content %}

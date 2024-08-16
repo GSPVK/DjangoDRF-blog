@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% include 'blog/svg_template.svg' %}
+{% load cache %}
+
+<head>
+  <meta charset="UTF-8">
+  {% block title %}
+    <title>Django Blog</title>
+  {% endblock %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}"/>
+  <link rel="icon" type="image/png" href="{% static 'favicon.png' %}">
+  <script src="{% static 'blog/css/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'blog/js/color-modes.js' %}"></script>
+  {% block extra_js %}
+  {% endblock %}
+</head>
+
+<!-- Color mode picker -->
+<div class="fixed-top" style="z-index: 9000">
+  {% include 'blog/includes/color_mode.html' %}
+</div>
+
+<body class="d-flex flex-column min-vh-100">
+
+<header class="header fixed-header bg-dark text-white-50">
+  <div class="container">
+    <h1>Blog App</h1>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Aside -->
+
+    <aside class="col-md-3 col-lg-2 d-md-block sidebar collapse" id="sidebar">
+      {% block leftbar %}
+        <div class="position-sticky pt-3">
+          <h2 class="text-center">Sidebar</h2>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <!-- Authentication -->
+
+            <div class="text-center">
+              {% if user.is_authenticated %}
+                <img src="{{ user.profile.photo.url }}" alt="user profile photo"
+                     width="120" height="120" class="img-thumbnail rounded-circle">
+                <p style="margin: 0">{{ user.get_username }}</p>
+                {% cache 5000 user_group user.username %}
+                  <p style="margin: 0">
+                    <strong>Group:</strong>
+                    {% if user.is_superuser %}
+                      Administrator
+                    {% else %}
+                      {% firstof user.groups.first.name "unknown" %}
+                    {% endif %}
+                  </p>
+
+                {% endcache user_group %}
+
+                <button class="btn btn-sm btn-link">
+                  <a class="nav-link {% if request.path == user.get_absolute_url %}active{% endif %}"
+                     href="{{ user.get_absolute_url }}">Profile</a>
+                </button>
+
+                <li>
+                  <form method="post" action="{% url 'logout' %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-sm btn-link">logout</button>
+                  </form>
+                </li>
+              {% else %}
+                <p>Welcome!</p>
+                <li><a href="{% url 'login' %}">Sign in</a></li>
+                <li><a href="{% url 'users:signup' %}">Sign up</a></li>
+              {% endif %}
+            </div>
+            <hr>
+
+            <li class="nav-item">
+              {% url 'blog:index' as blog_index_url %}
+              <a class="nav-link {% if blog_index_url == request.path %}active{% endif %}"
+                 aria-current="page"
+                 href="{% url 'blog:index' %}">
+                <svg class="bi pe-none me-2" width="16" height="16">
+                  <use href="#home"></use>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              {% url 'blog:posts' as blog_posts_url %}
+              <a class="nav-link {% if blog_posts_url == request.path %}active{% endif %}"
+                 aria-current="page"
+                 href="{% url 'blog:posts' %}">
+                <svg class="bi pe-none me-2" width="16" height="16">
+                  <use href="#books"></use>
+                </svg>
+                All posts
+              </a>
+            </li>
+            {% if user.is_authenticated %}
+              <li class="nav-item">
+                {% url 'subscription:my-feed' as my_feed_url %}
+                <a class="nav-link {% if my_feed_url == request.path %}active{% endif %}"
+                   aria-current="page"
+                   href="{% url 'subscription:my-feed' %}">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                    <use href="#feed"></use>
+                  </svg>
+                  My feed
+                </a>
+              </li>
+              <li class="nav-item">
+                {% url 'subscription:my-subscriptions' as my_subscriptions_url %}
+                <a class="nav-link {% if my_subscriptions_url == request.path %}active{% endif %}"
+                   aria-current="page"
+                   href="{% url 'subscription:my-subscriptions' %}">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                    <use href="#books"></use>
+                  </svg>
+                  Subscriptions
+                </a>
+              </li>
+              <li class="nav-item">
+                {% url 'subscription:my-favorites' as my_favorites_url %}
+                <a class="nav-link {% if my_favorites_url == request.path %}active{% endif %}"
+                   aria-current="page"
+                   href="{% url 'subscription:my-favorites' %}">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                    <use href="#favorites"></use>
+                  </svg>
+                  Favorites
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+          <hr>
+          <ul class="nav nav-pills flex-column mt-auto">
+            <li class="nav-item mb-2">
+              <a class="nav-link" aria-current="page" href="{% url 'api:swagger-ui' %}">
+                <svg class="bi pe-none me-2" width="16" height="16">
+                  <use href="#api"></use>
+                </svg>
+                API
+              </a>
+            </li>
+          </ul>
+        </div>
+      {% endblock leftbar %}
+    </aside>
+
+    <!-- Content -->
+
+    <main class="main col-8 offset-md-2" id="main-content">
+      <br>
+      {% block content %}
+        <h2>Content here</h2>
+      {% endblock %}
+    </main>
+
+  </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-body-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start">
+        <span class="text-muted">© 2024 Blog App.</span>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <a href="YOUR_GITHUB_LINK" target="_blank" class="text-muted me-2">
+          <i class="bi bi-github"></i>
+          <svg class="bi pe-none me-2" width="16" height="16">
+            <use href="#github-icon"></use>
+          </svg>Github
+        </a>
+        <a href="YOUR_TELEGRAM_LINK" target="_blank" class="text-muted">
+          <i class="bi bi-telegram"></i>
+          <svg class="bi pe-none me-2" width="16" height="16">
+            <use href="#telegram-icon"></use>
+          </svg>Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

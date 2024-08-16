@@ -1,0 +1,30 @@
+<ul class="pagination justify-content-center">
+  {% if followed_categories.has_previous %}
+    <li class="page-item">
+      <a href="?users_page={{ followed_users.number }}&categories_page={{ followed_categories.previous_page_number }}"
+         class="page-link">Prev</a>
+    </li>
+  {% else %}
+    <li class="page-item disabled"><a href="" class="page-link">Prev</a></li>
+  {% endif %}
+
+  {% for page_num in followed_categories.paginator.page_range %}
+    {% if page_num >= followed_categories.number|add:-1 and page_num <= followed_categories.number|add:1 or page_num == 1 or page_num == followed_categories.paginator.num_pages %}
+      <li class="page-item {% if page_num == followed_categories.number %}active{% endif %}">
+        <a href="?users_page={{ followed_users.number }}&categories_page={{ page_num }}"
+           class="page-link">{{ page_num }}</a>
+      </li>
+    {% elif page_num == 2 or page_num == followed_categories.paginator.num_pages|add:-1 %}
+      <li class="page-item"><span class="page-link">...</span></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if followed_categories.has_next %}
+    <li class="page-item">
+      <a href="?users_page={{ followed_users.number }}&categories_page={{ followed_categories.next_page_number }}"
+         class="page-link">Next</a>
+    </li>
+  {% else %}
+    <li class="page-item disabled"><a href="" class="page-link">Next</a></li>
+  {% endif %}
+</ul>

@@ -1,0 +1,20 @@
+{% if not post.user_favorite %}
+  <form method="post" action="{% url 'subscription:change-favorite' post.pk 'add' %}?next={{ request.path }}?page={{ page_obj.number }}#post_{{ post.id }}">
+    {% csrf_token %}
+    <button class="icon-button" type="submit">
+      <svg class="bi pe-none me-2" width="16" height="16">
+        <use href="#add-to-favorites"></use>
+      </svg>
+    </button>
+  </form>
+{% elif post.user_favorite %}
+  <form method="post" action="{% url 'subscription:change-favorite' post.pk 'remove' %}?next={{ request.path }}?page={{ page_obj.number }}#post_{{ post.id }}">
+    {% csrf_token %}
+    <button class="icon-button" type="submit">
+      <svg class="bi pe-none me-2" width="16" height="16">
+        <use href="#remove-favorite"></use>
+      </svg>
+    </button>
+  </form>
+{% endif %}
+<span style="margin-right: 0.7em">{{ post.fav_count }}</span>

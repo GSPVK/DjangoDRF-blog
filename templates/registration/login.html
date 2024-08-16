@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="mb-3">Login</h2>
+        {% if form.errors %}
+          <p><strong>Your username and password didn't match. Please try again.</strong></p>
+        {% endif %}
+
+        {% if next %}
+          {% if user.is_authenticated %}
+            <p><strong>Your account doesn't have access to this page. To proceed,
+              please log in with an account that has access.</strong></p>
+          {% else %}
+            <p><strong>Please log in to see this page.</strong></p>
+          {% endif %}
+        {% endif %}
+
+        <form method="post">
+          {% csrf_token %}
+          <div class="form-group mb-3">
+            <label for="{{ form.username.id_for_label }}">Username or e-mail</label>
+            <input type="text" class="form-control{% if form.username.errors %} is-invalid{% endif %}"
+                   id="{{ form.username.id_for_label }}" name="{{ form.username.html_name }}"
+                   placeholder="Enter username or e-mail" value="{{ form.username.value|default_if_none:'' }}">
+            {% for error in form.username.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="{{ form.password.id_for_label }}">Password</label>
+            <input type="password" class="form-control{% if form.password.errors %} is-invalid{% endif %}"
+                   id="{{ form.password.id_for_label }}" name="{{ form.password.html_name }}"
+                   placeholder="Enter password">
+            {% for error in form.password.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+            {% endfor %}
+          </div>
+
+          <button type="submit" class="btn btn-primary mb-2">Login</button>
+          <a href="{% url 'password_reset' %}" class="btn btn-link">Forgot your password?</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

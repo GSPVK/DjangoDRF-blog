@@ -1,0 +1,30 @@
+<ul class="pagination justify-content-center">
+  {% if posts.has_previous %}
+    <li class="page-item">
+      <a href="?posts_page={{ posts.previous_page_number }}&comments_page={{ comments.number }}"
+         class="page-link">Prev</a>
+    </li>
+  {% else %}
+    <li class="page-item disabled"><a href="" class="page-link">Prev</a></li>
+  {% endif %}
+
+  {% for page_num in posts.paginator.page_range %}
+    {% if page_num >= posts.number|add:-1 and page_num <= posts.number|add:1 or page_num == 1 or page_num == posts.paginator.num_pages %}
+      <li class="page-item {% if page_num == posts.number %}active{% endif %}">
+        <a href="?posts_page={{ page_num }}&comments_page={{ comments.number }}"
+           class="page-link">{{ page_num }}</a>
+      </li>
+    {% elif page_num == 2 or page_num == posts.paginator.num_pages|add:-1 %}
+      <li class="page-item"><span class="page-link">...</span></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if posts.has_next %}
+    <li class="page-item">
+      <a href="?posts_page={{ posts.next_page_number }}&comments_page={{ comments.number }}"
+         class="page-link">Next</a>
+    </li>
+  {% else %}
+    <li class="page-item disabled"><a href="" class="page-link">Next</a></li>
+  {% endif %}
+</ul>

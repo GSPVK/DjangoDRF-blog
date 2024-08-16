@@ -1,0 +1,1 @@
+from .ckeditor import CKEditorPostImages
