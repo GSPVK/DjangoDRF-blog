@@ -23,7 +23,7 @@ the project is the demonstration of two different approaches to implementing the
 - [Installation](#installation)
 - [Have a Suggestion?](#have-a-suggestion)
 
-## Two Approaches to Functionality Implementation::
+## Two Approaches to Functionality Implementation:
 The project allows you to compare two ways of implementing the same functionality. 
 You can see how the same tasks are solved using standard views, forms, and templates in classic Django, and using serializers, viewsets, and routers in DRF.
 
@@ -75,19 +75,19 @@ Users can add posts to their favorites.
 - [**Gunicorn**](https://docs.gunicorn.org/en/stable/) WSGI HTTP server
   
 
-- [**Bootstrap**](https://getbootstrap.com/)
+- [**Bootstrap**](https://getbootstrap.com/) CSS framework
 
 ## Extensions and Applications
 This section describes some of the packages, applications, and noteworthy features.
 
 - **Packages and extensions**:
-    - *[django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar)* - Debug panel for the site.
-    - *[jazzmin](https://django-jazzmin.readthedocs.io/)* - Custom admin interface.
-    - *[django-ckeditor](https://django-ckeditor.readthedocs.io/en/latest/)* - WYSIWYG HTML text editor.
-    - *[django-bleach](https://django-bleach.readthedocs.io/en/latest/)* - HTML validation and sanitization.
-    - *[simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)* - JWT authentication backend for the API.
-    - *[django celery results](https://pypi.org/project/django-celery-results/)* - Stores Celery task results in the database.
-    - *[flower](https://flower.readthedocs.io/en/latest/)* - Web-based celery monitoring tool.
+    - **[django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar)** - Debug panel for the site.
+    - **[jazzmin](https://django-jazzmin.readthedocs.io/)** - Custom admin interface.
+    - **[django-ckeditor](https://django-ckeditor.readthedocs.io/en/latest/)** - WYSIWYG HTML text editor.
+    - **[django-bleach](https://django-bleach.readthedocs.io/en/latest/)** - HTML validation and sanitization.
+    - **[simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)** - JWT authentication backend for the API.
+    - **[django celery results](https://pypi.org/project/django-celery-results/)** - Stores Celery task results in the database.
+    - **[flower](https://flower.readthedocs.io/en/latest/)** - Web-based celery monitoring tool.
   
 
 - **Django apps**:
@@ -144,8 +144,8 @@ This is because when certbot generates the certificates, it will use your base d
 ## Installation
 #### Clone the repository to your PC and navigate to the project directory:
 ```
-$ git clone <REPO_LINK>
-$ cd config
+$ git clone https://github.com/GSPVK/DjangoDRF-blog
+$ cd DjangoDRF-blog
 ```
 #### Copy the .env.example file and rename it to .env:
 
@@ -164,25 +164,37 @@ It will be sufficient to create a virtual environment, activate it, and then exe
 ```
 
 ### Docker
+#### Environment variables
+To ensure a successful certification process, you also need to define the following environment variables for the `web` service in both the [docker-compose.staging.yml](docker-compose.staging.yml) and [docker-compose.prod.yml](docker-compose.prod.yml)
+- `VIRTUAL_HOST=<your_domain.com>`
+- `VIRTUAL_PORT=<same_as_exposed_port>`
+- `LETSENCRYPT_HOST=<your_domain.com>`
+- `LETSENCRYPT_EMAIL=<your_email>`
+
 #### Build the Project:
 1. Start the project in Docker and attempt to obtain a test certificate. If successful, proceed to the next step. If not, resolve the errors.
+```sh
+docker compose -f docker-compose.staging.yml up
+``` 
 
-`docker compose -f docker-compose.staging.yml up` 
 2. Stop the service.
+```sh 
+docker compose -f docker-compose.staging.yml down
+```
 
-`docker compose -f docker-compose.staging.yml down`
 3. Now you can run the production version:
-
-`docker compose -f docker-compose.prod.yml up`
+```sh 
+docker compose -f docker-compose.prod.yml up
+```
 
 #### (Optional) Load Fixtures
 ```sh
-docker exec web poetry run python manage.py loaddata fixtures/fixtures.json
+docker compose -f <USED-COMPOSE.YML> exec web poetry run python manage.py loaddata fixtures/fixtures.json
 ```
 
 #### Create an Admin User:
 ```sh
-docker compose exec -it web /bin/sh
+docker compose -f <USED-COMPOSE.YML> exec -it web /bin/sh
 poetry run python manage.py createsuperuser
 ```
 

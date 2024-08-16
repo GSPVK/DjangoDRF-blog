@@ -18,7 +18,7 @@ services:
       - .env
     environment:
       - VIRTUAL_HOST=<your_domain.com>
-      - VIRTUAL_PORT=8000
+      - VIRTUAL_PORT=<same_as_exposed_port>
       - LETSENCRYPT_HOST=<your_domain.com>
       - LETSENCRYPT_EMAIL=<your_email>
     depends_on:

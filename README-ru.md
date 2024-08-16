@@ -74,19 +74,19 @@
 - [**Gunicorn**](https://docs.gunicorn.org/en/stable/) WSGI HTTP-сервер
   
 
-- [**Bootstrap**](https://getbootstrap.com/)
+- [**Bootstrap**](https://getbootstrap.com/) CSS фреймворк
 
 ## Расширения и приложения
 Здесь описаны некоторые (само собой не все) пакеты, приложения и достойные упоминания функции.
 
 - **Packages and extensions**:
-    - *[django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar)* - дебаг-панель для сайта.
-    - *[jazzmin](https://django-jazzmin.readthedocs.io/)* - кастомная админка
-    - *[django-ckeditor](https://django-ckeditor.readthedocs.io/en/latest/)* - WYSIWYG html редактор текста.
-    - *[django-bleach](https://django-bleach.readthedocs.io/en/latest/)* - валидация и очистка html.
-    - *[simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)* - JWT бэкенд аутентификации для API.
-    - *[django celery results](https://pypi.org/project/django-celery-results/)* - хранит результаты работы Celery в БД.
-    - *[flower](https://flower.readthedocs.io/en/latest/)* - веб-мониторинг для Celery.
+    - **[django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar)** - дебаг-панель для сайта.
+    - **[jazzmin](https://django-jazzmin.readthedocs.io/)** - кастомная админка
+    - **[django-ckeditor](https://django-ckeditor.readthedocs.io/en/latest/)** - WYSIWYG html редактор текста.
+    - **[django-bleach](https://django-bleach.readthedocs.io/en/latest/)** - валидация и очистка html.
+    - **[simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)** - JWT бэкенд аутентификации для API.
+    - **[django celery results](https://pypi.org/project/django-celery-results/)** - хранит результаты работы Celery в БД.
+    - **[flower](https://flower.readthedocs.io/en/latest/)** - веб-мониторинг для Celery.
   
 
 - **Django apps**:
@@ -146,8 +146,8 @@
 ## Установка
 #### Клонируйте репозиторий на свой ПК и перейдите в директорию проекта:
 ```
-$ git clone <REPO_LINK>
-$ cd config
+$ git clone https://github.com/GSPVK/DjangoDRF-blog
+$ cd DjangoDRF-blog
 ```
 #### Скопируйте файл .env.example и переименуйте его в .env:
 
@@ -165,26 +165,37 @@ cp .env.example .env
 (.venv) $ poetry run python manage.py runserver
 ```
 
-### Докер
+### Docker
+#### Переменные окружения
+Для успешного процесса сертификации вам так же нужно определить следующие переменные для сервиса `web` в файлах [docker-compose.staging.yml](docker-compose.staging.yml) и [docker-compose.prod.yml](docker-compose.prod.yml)
+- `VIRTUAL_HOST=<your_domain.com>`
+- `VIRTUAL_PORT=<same_as_exposed_port>`
+- `LETSENCRYPT_HOST=<your_domain.com>`
+- `LETSENCRYPT_EMAIL=<your_email>`
 #### Соберите проект:
 1. Запустите проект в докере и попытайтесь получить тестовый сертификат. Если у вас получилось - переходите к следующему шагу. Если нет - устраните ошибки.
+```sh
+docker compose -f docker-compose.staging.yml up
+``` 
 
-`docker compose -f docker-compose.staging.yml up` 
 2. Остановите сервис.
+```sh 
+docker compose -f docker-compose.staging.yml down
+```
 
-`docker compose -f docker-compose.staging.yml down`
-3. Теперь вы можете запускать prod версию:
-
-`docker compose -f docker-compose.prod.yml up`
+3. Теперь вы можете запустить prod версию:
+```sh 
+docker compose -f docker-compose.prod.yml up
+```
 
 #### (Опционально) Установите фикстуры
 ```sh
-docker exec web poetry run python manage.py loaddata fixtures/fixtures.json
+docker compose -f <ИСПОЛЬЗУЕМЫЙ-COMPOSE.YML> exec web poetry run python manage.py loaddata fixtures/fixtures.json
 ```
 
 #### Создайте администратора:
 ```sh
-docker compose exec -it web /bin/sh
+docker compose -f <ИСПОЛЬЗУЕМЫЙ-COMPOSE.YML> exec -it web /bin/sh
 poetry run python manage.py createsuperuser
 ```
 
