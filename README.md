@@ -154,13 +154,13 @@ cp .env.example .env
 ```
 
 ### For Simple Tests
-It will be sufficient to create a virtual environment, activate it, and then execute the following five commands:
+Just execute the following five commands:
 ```shell
-(.venv) $ poetry install
-(.venv) $ poetry run python manage.py migrate
-(.venv) $ poetry run python manage.py create_default_groups
-(.venv) $ poetry run python manage.py createsuperuser
-(.venv) $ poetry run python manage.py runserver
+$ poetry install
+$ poetry run python manage.py migrate
+$ poetry run python manage.py create_default_groups
+$ poetry run python manage.py createsuperuser
+$ poetry run python manage.py runserver
 ```
 
 ### Docker

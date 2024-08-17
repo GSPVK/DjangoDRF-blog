@@ -156,13 +156,13 @@ cp .env.example .env
 ```
 
 ### Для простых тестов 
-Достаточно будет создать виртуальное окружение, активировать его, затем выполнить следующие 5 команд:
+Просто выполните следующие 5 команд:
 ```shell
-(.venv) $ poetry install
-(.venv) $ poetry run python manage.py migrate
-(.venv) $ poetry run python manage.py create_default_groups
-(.venv) $ poetry run python manage.py createsuperuser
-(.venv) $ poetry run python manage.py runserver
+$ poetry install
+$ poetry run python manage.py migrate
+$ poetry run python manage.py create_default_groups
+$ poetry run python manage.py createsuperuser
+$ poetry run python manage.py runserver
 ```
 
 ### Docker
