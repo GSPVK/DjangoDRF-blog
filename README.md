@@ -3,6 +3,7 @@
 - **en** **English**
 
 # Blog Web Service
+[![Build status](https://github.com/GSPVK/DjangoDRF-blog/actions/workflows/django.yml/badge.svg?branch=master)](https://github.com/GSPVK/DjangoDRF-blog/actions/workflows/django.yml)
 [![Python](https://img.shields.io/badge/Python-3.12-blue)]()
 [![Django](https://img.shields.io/badge/Django-5.1-blue)]()
 [![DRF](https://img.shields.io/badge/DRF-3.15.2-blue)]()
