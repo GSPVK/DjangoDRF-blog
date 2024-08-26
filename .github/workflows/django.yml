@@ -24,8 +24,6 @@ jobs:
         pip install -U pip
         pip install poetry
         poetry install
-      env:
-        POETRY_VIRTUALENVS_CREATE: false
     - name: Run Tests
       run: |
         poetry run python manage.py test
