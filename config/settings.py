@@ -9,7 +9,7 @@ env = environ.Env()
 environ.Env.read_env(env.str(root(), '.env'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = env.str('SECRET_KEY')
+SECRET_KEY = env.str('SECRET_KEY', default='!!!SET DJANGO_SECRET_KEY!!!',)
 DEBUG = env.bool('DEBUG', default=False)
 ALLOWED_HOSTS = env.str('ALLOWED_HOSTS', default='').split(' ')
 ROOT_URLCONF = 'config.urls'
@@ -86,7 +86,7 @@ if DEBUG:
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_COOKIE_SECURE = True if not DEBUG else False
 SESSION_COOKIE_SECURE = True if not DEBUG else False
-CSRF_TRUSTED_ORIGINS = env.str("CSRF_TRUSTED_ORIGINS").split(" ")
+CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS', default=[])
 
 TEMPLATES = [
     {
@@ -107,7 +107,7 @@ TEMPLATES = [
 DATABASES = {
     "default": {
         "ENGINE": env.str('SQL_ENGINE', 'django.db.backends.sqlite3'),
-        "NAME": env.str('SQL_DB', BASE_DIR / 'db.sqlite4migrations'),
+        "NAME": env.str('SQL_DB', BASE_DIR / 'db.sqlite3'),
         "USER": env.str('SQL_USER', 'user'),
         "PASSWORD": env.str('SQL_PASSWORD', 'password'),
         "HOST": env.str('SQL_HOST', 'localhost'),
@@ -148,7 +148,7 @@ STORAGES = {
 
 # CACHE
 if not DEBUG:
-    REDIS_PASSWORD = env.str('REDIS_PASSWORD')
+    REDIS_PASSWORD = env.str('REDIS_PASSWORD', default='!!!SET REDIS_PASSWORD!!!')
     REDIS_HOST = env.str('REDIS_HOST', '127.0.0.1')
     REDIS_PORT = env.str('REDIS_PORT', '6379')
     CACHES = {
@@ -276,7 +276,9 @@ BLEACH_DEFAULT_WIDGET = 'ckeditor.widgets.CKEditorWidget'
 # CELERY
 ###########################
 # For docker. Take a note, that @rabbit should be the name of the service we use for the RabbitMQ container in compose
-CELERY_BROKER_URL = f'amqp://{env.str("RABBITMQ_DEFAULT_USER")}:{env.str("RABBITMQ_DEFAULT_PASS")}@rabbit//'
+RABBITMQ_DEFAULT_USER = env.str("RABBITMQ_DEFAULT_USER", default='guest')
+RABBITMQ_DEFAULT_PASS = env.str("RABBITMQ_DEFAULT_PASS", default='guest')
+CELERY_BROKER_URL = f'amqp://{RABBITMQ_DEFAULT_USER}:{RABBITMQ_DEFAULT_PASS}@rabbit//'
 
 # For local development
 # CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672/'
