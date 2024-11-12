@@ -150,20 +150,21 @@
 $ git clone https://github.com/GSPVK/DjangoDRF-blog
 $ cd DjangoDRF-blog
 ```
-#### Скопируйте файл .env.example и переименуйте его в .env:
-
-```sh
-cp .env.example .env
-```
 
 ### Для простых тестов 
-Просто выполните следующие 5 команд:
+Просто выполните следующие 5 команд и всё:
 ```shell
 $ poetry install
 $ poetry run python manage.py migrate
 $ poetry run python manage.py create_default_groups
 $ poetry run python manage.py createsuperuser
 $ poetry run python manage.py runserver
+```
+
+#### Скопируйте файл .env.example и переименуйте его в .env:
+
+```sh
+cp .env.example .env
 ```
 
 ### Docker

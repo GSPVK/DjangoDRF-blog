@@ -148,20 +148,21 @@ This is because when certbot generates the certificates, it will use your base d
 $ git clone https://github.com/GSPVK/DjangoDRF-blog
 $ cd DjangoDRF-blog
 ```
-#### Copy the .env.example file and rename it to .env:
-
-```sh
-cp .env.example .env
-```
 
 ### For Simple Tests
-Just execute the following five commands:
+Just execute the following five commands, and that's it!
 ```shell
 $ poetry install
 $ poetry run python manage.py migrate
 $ poetry run python manage.py create_default_groups
 $ poetry run python manage.py createsuperuser
 $ poetry run python manage.py runserver
+```
+
+#### Copy the .env.example file and rename it to .env:
+
+```sh
+cp .env.example .env
 ```
 
 ### Docker

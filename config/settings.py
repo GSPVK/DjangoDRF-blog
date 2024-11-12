@@ -10,8 +10,8 @@ environ.Env.read_env(env.str(root(), '.env'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env.str('SECRET_KEY', default='!!!SET DJANGO_SECRET_KEY!!!',)
-DEBUG = env.bool('DEBUG', default=False)
-ALLOWED_HOSTS = env.str('ALLOWED_HOSTS', default='').split(' ')
+DEBUG = env.bool('DEBUG', default=True)
+ALLOWED_HOSTS = env.str('ALLOWED_HOSTS', default='127.0.0.1').split(' ')
 ROOT_URLCONF = 'config.urls'
 WSGI_APPLICATION = 'config.wsgi.application'
 
